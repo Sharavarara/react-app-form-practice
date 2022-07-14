@@ -1,0 +1,46 @@
+@use './../../../common/styles/variables' as *;
+@use './../../../common/styles/template';
+
+
+.form{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 75%;
+  margin:auto;
+  color: white;
+    > p{
+      margin: 0 0 30px;
+      font-size: 18px;
+    }
+}
+
+.radioInputsContainer{
+  display: flex;
+  flex-direction: column;
+    .radioInputBlocks{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        border: 1px solid white;
+        margin: 15px 0;
+        padding: 15px;
+          > div > *{
+            text-align: left;
+            line-height: 18px;
+          }
+          > div > h2{
+            margin-left: 10px;
+            margin-bottom: 10px;
+          }
+    }
+}
+
+.confirmBtn{
+  @extend %submit-btn;
+}
+
+
+
+
+

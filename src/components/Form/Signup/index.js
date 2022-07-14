@@ -45,29 +45,32 @@ const Signup = () => {
               name='passwordConf'
               type='password'
               placeholder='Password confirmation' />
-            <div>
-              <div>
-                <input type='radio' />
+            <div className={styles.radioInputsContainer}>
+              <div className={styles.radioInputBlocks}>
+                <input type='radio' name='radio' />
                 <div>
                   <h2>Join As a Buyer</h2>
                   <p>I am looking for a Name, Logo or Tagline for my business, brand or product.</p>
                 </div>
               </div>
-              <div>
-                <input type='radio' />
+              <div className={styles.radioInputBlocks}>
+                <input type='radio' name='radio'/>
                 <div>
                   <h2>Join As a Buyer</h2>
                   <p>I am looking for a Name, Logo or Tagline for my business, brand or product.</p>
                 </div>
               </div>
             </div>
-            <input type='submit' value='Login' />
+            <input
+              className={styles.confirmBtn}
+              type='submit'
+              value='Create account'
+              name='submit'  
+            />
           </Form>
         )
       }}
     </Formik>
-      
-
   );
 }
 

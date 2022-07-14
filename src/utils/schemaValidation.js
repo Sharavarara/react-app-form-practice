@@ -2,9 +2,9 @@ import * as Yup from 'yup';
 
 const SCHEMA_NAME = Yup.string().matches(/^[A-Z][a-z]{1,20}$/)
 
-const SCHEMA_EMAIL = Yup.string().email().matches(/[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+/).required();
+const SCHEMA_EMAIL = Yup.string().email('Email must be example@example.com').matches(/[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+/).required();
 
-const SCHEMA_PASSWORD = Yup.string().required();
+const SCHEMA_PASSWORD = Yup.string().required("Field can't be empty");
 
 export const SCHEMA_LOG_IN = Yup.object({
   email:SCHEMA_EMAIL,

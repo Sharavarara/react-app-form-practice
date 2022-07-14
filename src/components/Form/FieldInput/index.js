@@ -1,5 +1,6 @@
 import React from 'react';
 import { Field, ErrorMessage } from 'formik';
+import cx from 'classnames';
 import styles from './../FieldInput/FieldInput.module.scss';
 
 const FieldInput = (props) => {
@@ -7,11 +8,15 @@ const FieldInput = (props) => {
   return (
     <label>
       <Field name={name}>
-        {({ field }) => {
-          return <input {...field} {...rest} className={styles.input}/>
+        {({ field, meta }) => {
+          const inputStyles = cx(styles.input, {
+            [styles.valid]: !meta.error,
+            [styles.invalid]:meta.error,
+          })
+          return <input {...field} {...rest} className={inputStyles}/>
         }}
       </Field>
-      <ErrorMessage name={name} component='span'/>
+      <ErrorMessage name={name} component='div'/>
     </label>
   );
 }

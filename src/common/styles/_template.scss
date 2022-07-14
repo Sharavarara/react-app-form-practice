@@ -1,0 +1,17 @@
+@use './variables' as *;
+
+%border-none{
+  border:none;
+}
+%submit-btn{
+  background-color: $confirm-btn-color;
+  @extend %border-none;
+  height: 64px;
+  margin: 15px 0;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  &:active {
+    background-color: darken($confirm-btn-color, $amount: 10)
+  }
+}

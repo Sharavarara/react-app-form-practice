@@ -3,12 +3,7 @@
 
 
 .form{
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  width: 75%;
-  margin:auto;
-  color: white;
+  @extend %form;
     > p{
       margin: 0 0 30px;
       font-size: 18px;

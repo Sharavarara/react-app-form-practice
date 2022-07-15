@@ -1,7 +1,8 @@
 import { Form, Formik } from 'formik';
 import React from 'react';
 import FieldInput from '../FieldInput';
-import {SCHEMA_LOG_IN} from './../../../utils/schemaValidation';
+import { SCHEMA_LOG_IN } from './../../../utils/schemaValidation';
+import styles from './../Login/Login.module.scss';
 
 const initialValues = { email: '', password: '' };
 
@@ -17,7 +18,7 @@ const Login = (props) => {
     >
       {(formikProps) => {
         return (
-          <Form>
+          <Form className={styles.form}>
             <h1>LOGIN TO YOUR ACCOUNT</h1>
             <FieldInput
               name='email'
@@ -28,7 +29,10 @@ const Login = (props) => {
               type='password'
               placeholder='Password'
             />
-            <input type='submit' value='Login'/>
+            <input
+              className={styles.confirmBtn}
+              type='submit'
+              value='Login' />
           </Form>
         )
       }}

@@ -3,6 +3,16 @@
 %border-none{
   border:none;
 }
+
+%form{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 75%;
+  margin: auto;
+  color: white;
+}
+
 %submit-btn{
   background-color: $confirm-btn-color;
   @extend %border-none;

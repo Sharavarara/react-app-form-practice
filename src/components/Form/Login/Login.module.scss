@@ -1,0 +1,8 @@
+@use './../../../common/styles/template';
+
+.form{
+  @extend %form;
+  .confirmBtn{
+    @extend %submit-btn;
+  }
+}

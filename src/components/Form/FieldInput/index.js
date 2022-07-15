@@ -7,16 +7,19 @@ const FieldInput = (props) => {
   const { name, ...rest} = props;
   return (
     <label>
-      <Field name={name}>
+      <Field name={name} className={styles.field}>
         {({ field, meta }) => {
           const inputStyles = cx(styles.input, {
             [styles.valid]: !meta.error,
-            [styles.invalid]:meta.error,
+            [styles.invalid]: meta.error,
           })
           return <input {...field} {...rest} className={inputStyles}/>
         }}
       </Field>
-      <ErrorMessage name={name} component='div'/>
+      <ErrorMessage
+        name={name}
+        component='span'
+        className={styles.error}/>
     </label>
   );
 }

@@ -21,34 +21,36 @@ const Signup = () => {
           <Form className={styles.form}>
             <h1>CREATE AN ACCOUNT</h1>
             <p>We always keep your name and email address private.</p>
-            <FieldInput
-              spellCheck='false'
-              name='fname'
-              type='text'
-              placeholder='First name' />
-            <FieldInput
-              spellCheck='false'
-              name='lname'
-              type='text'
-              placeholder='Last name' />
-            <FieldInput
-              spellCheck='false'
-              name='dname'
-              type='text'
-              placeholder='Display name' />
-            <FieldInput
-              spellCheck='false'
-              name='email'
-              type='text'
-              placeholder='Email address' />
-            <FieldInput
-              name='password'
-              type='password'
-              placeholder='Password'/>
-            <FieldInput
-              name='passwordConf'
-              type='password'
-              placeholder='Password confirmation' />
+            <label className={styles.fieldset}>
+              <FieldInput
+                spellCheck='false'
+                name='fname'
+                type='text'
+                placeholder='First name' />
+              <FieldInput
+                spellCheck='false'
+                name='lname'
+                type='text'
+                placeholder='Last name' />
+              <FieldInput
+                spellCheck='false'
+                name='dname'
+                type='text'
+                placeholder='Display name' />
+              <FieldInput
+                spellCheck='false'
+                name='email'
+                type='text'
+                placeholder='Email address' />
+              <FieldInput
+                name='password'
+                type='password'
+                placeholder='Password'/>
+              <FieldInput
+                name='passwordConf'
+                type='password'
+                placeholder='Password confirmation' />
+            </label>
             <div className={styles.radioInputsContainer}>
               <div className={styles.radioInputBlocks}>
                 <input type='radio' name='radio' />

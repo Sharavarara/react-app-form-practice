@@ -6,3 +6,11 @@
     @extend %submit-btn;
   }
 }
+
+@media (min-width: 715px) {
+  .form {
+    width: 33%;
+    min-width: 550px;
+    margin: auto;
+  }
+}

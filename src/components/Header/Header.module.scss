@@ -4,6 +4,14 @@
   padding: 3rem 3rem 5rem;
 }
 
+@media (min-width: 715px) {
+  .header {
+    width: 60%;
+    min-width: 550px;
+    margin: auto;
+  }
+}
+
 
 
 

@@ -22,22 +22,22 @@ const Signup = () => {
             <h1>CREATE AN ACCOUNT</h1>
             <p>We always keep your name and email address private.</p>
             <FieldInput
-              spellcheck='false'
+              spellCheck='false'
               name='fname'
               type='text'
               placeholder='First name' />
             <FieldInput
-              spellcheck='false'
+              spellCheck='false'
               name='lname'
               type='text'
               placeholder='Last name' />
             <FieldInput
-              spellcheck='false'
+              spellCheck='false'
               name='dname'
               type='text'
               placeholder='Display name' />
             <FieldInput
-              spellcheck='false'
+              spellCheck='false'
               name='email'
               type='text'
               placeholder='Email address' />

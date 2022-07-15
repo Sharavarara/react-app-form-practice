@@ -21,6 +21,7 @@ const Login = (props) => {
           <Form className={styles.form}>
             <h1>LOGIN TO YOUR ACCOUNT</h1>
             <FieldInput
+              spellCheck='false'
               name='email'
               type='email'
               placeholder='Email address' />
